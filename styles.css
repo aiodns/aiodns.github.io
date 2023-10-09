@@ -1,1 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-content li:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
 
