@@ -14,23 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     });
-
-    // Handle checkbox selections
-    const checkboxes = dropdownContent.querySelectorAll("input[type='checkbox']");
-    checkboxes.forEach(function(checkbox) {
-        checkbox.addEventListener("change", function() {
-            const selectedOptions = Array.from(checkboxes)
-                .filter(function(checkbox) {
-                    return checkbox.checked;
-                })
-                .map(function(checkbox) {
-                    return checkbox.value;
-                });
-
-            dropdown.querySelector(".dropdown-button").textContent = selectedOptions.length > 0
-                ? selectedOptions.join(", ")
-                : "Select an option";
-        });
-    });
 });
-
