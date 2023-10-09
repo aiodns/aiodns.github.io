@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Close dropdown when clicking outside
     window.addEventListener("click", function(event) {
-        if (!event.target.matches(".dropdown-btn")) {
+        if (!event.target.matches(".dropdown-button")) {
             if (dropdownContent.classList.contains("show")) {
                 dropdownContent.classList.remove("show");
             }
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     return checkbox.value;
                 });
 
-            dropdown.querySelector(".dropdown-btn").textContent = selectedOptions.length > 0
+            dropdown.querySelector(".dropdown-button").textContent = selectedOptions.length > 0
                 ? selectedOptions.join(", ")
                 : "Select an option";
         });
