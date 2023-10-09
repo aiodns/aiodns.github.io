@@ -1,4 +1,4 @@
-const modeToggle = document.getElementById("mode-toggle");
+const modeToggle = document.getElementById("mode-shit");
 const body = document.body;
 
 modeToggle.addEventListener("click", () => {
