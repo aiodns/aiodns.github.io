@@ -1,38 +1,4 @@
 <html>
-  <link rel="stylesheet" href="styles.css">
   <body>
-    <div class="search-container">
-      <span class="search-icon" onclick="toggleSearchBox()">🔍</span>
-      <div class="search-box" id="searchBox">
-        <input type="text" placeholder="Search...">
-      </div>
-      <script>
-        function toggleSearchBox() {
-            var searchBox = document.getElementById("searchBox");
-            if (searchBox.style.display === "block") {
-                searchBox.style.display = "none";
-            } else {
-                searchBox.style.display = "block";
-            }
-        }
-
-        // Close the search box when clicking outside of it
-        window.addEventListener("click", function(event) {
-            var searchContainer = document.querySelector(".search-container");
-            var searchBox = document.getElementById("searchBox");
-            if (!searchContainer.contains(event.target)) {
-                searchBox.style.display = "none";
-            }
-        });
-      </script>
-    </div>
-    <main>
-      <p>music streaming</p>
-    </main>
-    <footer>
-      <div class="footer">
-        <p style="text-align:center">&copy; 2023 Lstn. All rights reserve</p>
-      </div>
-    </footer>
   </body>
 </html>
