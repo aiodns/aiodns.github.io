@@ -41,15 +41,14 @@
 .search-container {
             position: relative;
             display: inline-block;
-        }
+}
 
 .search-icon {
             cursor: pointer;
-        }
+}
 
 .search-box {
             display: none;
-            position: absolute;
+            position: right;
             top: 100%;
-            right: 100%;
-        }
+}
