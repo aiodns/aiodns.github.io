@@ -1,8 +1,12 @@
 body {
-  background-image: url(https://cdn.discordapp.com/avatars/1074668481867419758/e05f30ba757cad2e497eb93eab71baef.png);
-  background-size: cover;
-  display: flex;
-  overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    color: #fff;
+    background-color: #1F2128;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .introduction {
