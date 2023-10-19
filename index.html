@@ -379,37 +379,6 @@ html, body {
     </style>
 
 
-<script>
-  var i = 0;
-  var txt = 'better';
-  var speed = 1000;
-  var isDeleting = false;
-
-  function typeWriter() {
-    if (isDeleting && i > 0) {
-      document.title = "@" + txt.substring(0, i-1);
-      i--;
-      setTimeout(typeWriter, speed);
-    } else if (!isDeleting && i < txt.length) {
-      document.title = "@" + txt.substring(0, i+1);
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-
-    if (i == txt.length) {
-      isDeleting = true;
-    } else if (i == 0) {
-      isDeleting = false;
-    }
-  }
-
-  typeWriter();
-</script>
-
-
-
-
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
