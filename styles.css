@@ -9,6 +9,35 @@ body {
     overflow: hidden;
 }
 
-.introduction {
-  text-align: center;
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
 }
+
+
+  /* border */
+  .border {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 39px 27px;
+      width: 100%;
+      max-width: 35.9rem;
+      border-radius: 35px;
+      background-color: rgba(19, 19, 19, 0.75) !important;
+  }
+      
+  @media (max-width : 480px) {
+      .border {
+          left: 50%;
+          padding: 0px, 0px;
+          width: 80%;
+          max-width: 100%;
+          border-radius: 21px;
+      }
+  }
