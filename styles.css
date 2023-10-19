@@ -41,3 +41,25 @@ body {
           border-radius: 21px;
       }
   }
+
+.social-media {
+      text-align: center;
+      position: relative;
+  }
+  
+  .description {
+      font-size: 17px;
+      
+      color: #fff;
+      margin: 20px 0;
+  }
+  
+  .username {
+      color: #777777;
+      font-size: 30px;
+      margin-right: 10px;
+      
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(150, 47, 191, 0.7), 0 0 20px rgba(255, 0, 80, 0.7), 0 0 30px rgba(0, 242, 234, 0.7);
+      animation: username 13s infinite;
+  }
